@@ -8,7 +8,7 @@ if (_uid == "76561198053995177") then {
 	_newPosBox = getMarkerPos _markerPosBox;
 	_ammoboxAction = player addAction["Toggle Box", {
 		_tempPosBox = getPos _ammobox;
-		if ( _tempPosBox select 1 == _stdPosBox select 1 ) then{
+		if ( _tempPosBox select 1 == _stdPosBox select 1 ) then{     //Abfrage und porten der Box
 			_ammobox setPos _newPosBox;
 		}else{
 			_ammobox setPos _stdPosBox;
